@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    border-radius: 15px;
+}
+.info {
+    width: 100vw;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.cover {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.song-info {
+    width: 200px;
+    height: 150px;
+    flex-direction: column;
+}
+.song-name {
+    color: #000000;
+   height: 100px;
+   padding: 5px;
+   margin-bottom: 5px;
+   font-size: 2rem;
+}
+.artist {
+   color: #c83f82;
+   height: 45px;
+   font-size: 1.3rem;
+   font-weight: 500;
+   padding: 5px 20px 0px 5px;
+   display: flex;
+   align-items: flex-end;
+}
+.time {
+   height: 45px;
+   font-size: 1.3rem;
+   font-weight: 500;
+   padding: 5px 20px 0px 5px;
+   display: flex;
+   align-items: flex-end;
+}
+
+.info-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.buttons {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#controls {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+#playPrev, #play, #playNext, #shuffle {
+    cursor: pointer;
+   border: none;
+   background-color: transparent;
+   width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#shuffle {
+    background-image: url("./png/shuffle.png");
+    margin-left: 5px;
+}
+#playPrev {
+    background-image: url("./png/previous-1.png");
+}
+#playNext {
+    background-image: url("./png/next-1.png");
+}
+.notPlaying {
+    background-image: url("./png/play-1.png");
+}
+.playing {
+    background-image: url("./png/pause.png");
+}
+.shuffleOn {
+    border: 2px dashed #c83f82 !important;
+}
